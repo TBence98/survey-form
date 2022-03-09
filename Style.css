@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background: linear-gradient(
+        117deg,
+        rgba(11, 96, 121, 0.7) 0%,
+        rgba(52, 90, 113, 0.7) 100%
+    );
+    font: 1rem "Roboto", sans-serif;
+}
+
+#title {
+    text-align: center;
+    margin: 1em auto 0 auto;
+    letter-spacing: 0.25rem;
+}
+
+#description {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.5em;
+    margin-bottom: 1.7em;
+}
+
+#survey-form {
+    width: 40%;
+    min-width: 300px;
+    margin: 0 auto 3rem auto;
+    padding: 2rem;
+    background-color: rgba(32, 27, 27, 0.712);
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 980px) {
+    #survey-form {
+        width: 70%;
+    }
+}
+
+.input-form {
+    padding: 0.5em;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    border-radius: 0.25rem;
+}
+
+#dropdown {
+    margin-bottom: 0;
+}
+
+.radios {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.radios input {
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0 0.6em 0 0;
+}
+
+.sectionText {
+    margin-bottom: 0.5em;
+}
+
+.labels {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+.checkboxes {
+    margin-bottom: 1.3em;
+}
+
+.checkboxes input {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 0.6em;
+}
+
+#textarea {
+    margin-top: 0.5em;
+    width: 100%;
+    min-height: 10em;
+    padding: 0.5em 0.5em 0 0.5em;
+    border-radius: 0.25rem;
+}
+
+#submit {
+    margin: 2em auto 0 auto;
+    width: 100%;
+    padding: 0.8em;
+    background-color: rgb(55, 151, 55);
+    color: white;
+}
+
+#submit:hover {
+    color: black;
+}

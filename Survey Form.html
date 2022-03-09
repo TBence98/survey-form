@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1> 
+    <p id="description">Description for the survey</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name
+            <input type="text" id="name" class="input-form" placeholder="Enter your name" required>
+        </label>
+        <label for="email" id="email-label">Email
+            <input type="email" id="email" class="input-form" placeholder="Enter your Email" required>
+        </label>
+        <label for="number" id="number-label">Age
+            <input type="number" id="number" class="input-form" placeholder="Age" min="1" max="200">
+        </label>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" class="input-form">
+            <option value="" disabled selected>Select your option</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select>
+        <div class="radios"><p class="sectionText">Would you recommend (...) to a friend?</p> 
+            <label for="radio1" class="labels">
+                <input type="radio" id="radio1" name="Options" value="radio1"> 
+                 Definitely          
+            </label>
+            <label for="radio2" class="labels">
+                <input type="radio" id="radio2" name="Options" value="radio2">
+                Maybe           
+            </label>
+            <label for="radio3" class="labels">
+                <input type="radio" id="radio3" name="Options" value="radio3">
+                Not sure           
+            </label>
+        </div>
+        <div class="checkboxes"><p class="sectionText">What would you like to see improved?</p>
+            <label for="chck1" class="labels">
+                <input type="checkbox" id="chck1" value="1">
+                Checkbox 1
+            </label>
+            <label for="chck2" class="labels">
+                <input type="checkbox" id="chck2" value="2">
+                Checkbox 2
+            </label>
+            <label for="chck3" class="labels">
+                <input type="checkbox" id="chck3" value="3">
+                Checkbox 3
+            </label>
+            <label for="chck4" class="labels">
+                <input type="checkbox" id="chck4" value="4">
+                Checkbox 4
+            </label>
+            <label for="chck5" class="labels">
+                <input type="checkbox" id="chck5" value="5">
+                Checkbox 5
+            </label>
+            <label for="chck6" class="labels">
+                <input type="checkbox" id="chck6" value="6">
+                Checkbox 6
+            </label>
+            <label for="chck7" class="labels">
+                <input type="checkbox" id="chck7" value="7">
+                Checkbox 7
+            </label>
+        </div>
+        <label for="textarea">Any comments or suggestions?</label>
+        <textarea id="textarea" placeholder="Enter you comment here..."></textarea>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
